@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "angular-view": "apps/angular-view",
+    "angular-view-e2e": "apps/angular-view-e2e",
+    "demo-app": "apps/demo-app",
+    "demo-app-e2e": "apps/demo-app-e2e",
+    "remote": "apps/remote",
+    "remote-e2e": "apps/remote-e2e",
+    "shell": "apps/shell",
+    "shell-e2e": "apps/shell-e2e"
+  }
+}
