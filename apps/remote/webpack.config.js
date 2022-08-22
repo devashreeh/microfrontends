@@ -30,22 +30,8 @@ module.exports = {
         name: "remote",
         filename: "remoteEntry.js",
         exposes: {
-            './Module': './apps/remote/src/app/abc/abc.module.ts',
+            './Module': './apps/remote/src/app/employer/employer.module.ts',
         },
-
-
-        // For remotes (please adjust)
-        // name: "remote",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './apps/remote/src/app/app.component.ts',
-        // },        
-        
-        // For hosts (please adjust)
-        // remotes: {
-        //     "demoApp": "http://localhost:4200/remoteEntry.js",
-
-        // },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 

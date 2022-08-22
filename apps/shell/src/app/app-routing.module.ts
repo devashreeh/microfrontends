@@ -12,7 +12,7 @@ const routes: Routes = [
       type: 'module',
       exposedModule: './Module'
     })
-    .then(m => m.AbcModule)
+    .then(m => m.EmployerModule)
   },
   {
     path: 'angular-view',
