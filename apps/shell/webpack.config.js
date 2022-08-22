@@ -37,7 +37,7 @@ module.exports = {
         
         // For hosts (please adjust)
         // remotes: {
-        //     "demoApp": "http://localhost:4200/remoteEntry.js",
+        //     "angular-view": "http://localhost:4202/remoteEntry.js",
         //     "remote": "http://localhost:4201/remoteEntry.js",
 
         // },

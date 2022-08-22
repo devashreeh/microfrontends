@@ -1,0 +1,52 @@
+<div style="margin-left: 10%; margin-right:10%;">
+    <section>
+      <h1>MicroFrontend With Angular</h1>
+      <h6>Mindbowser</h6>
+  
+      <p>Tools used to build this application:</p>
+      <div class="tabs" style="display: inline-flex;">
+        <div style="width: 250px; border-right: 2px solid;">
+          <div (click)="opencontent(1)" [ngClass]="displayindex == 1? 'tabbackground':''">
+            <p>Defination</p>
+          </div>
+          <div (click)="opencontent(2)" [ngClass]="displayindex == 2? 'tabbackground':''">
+            <p>Webpack Module fedration</p>
+          </div>
+          <div (click)="opencontent(3)"[ngClass]="displayindex == 3? 'tabbackground':''">
+            <p>Nx Workspace</p>
+          </div>
+          <div (click)="opencontent(4)" [ngClass]="displayindex == 4? 'tabbackground':''">
+            <p>Architechture of Demo application</p>
+          </div>
+        </div>
+        <div style="width:60%; margin-left: 15px;">
+          <div *ngIf="displayindex == 1">
+            <ul>
+              <li><b>Remote : </b>
+                <p>Small Microfronted Application which are coupled together to build complete application.
+                  These Microfrontend application can run on seprate server and domain.</p>
+              </li>
+              <li><b>Host/Shell : </b>
+                <p>The collection of micro-frontend remotes is housed inside another website, the host of the web
+                  application.</p>
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="displayindex == 2">
+            <p>Webpack 5 provide Module fedration which help to wireup all microfrontend application in single page
+              application.</p>
+          </div>
+          <div *ngIf="displayindex == 3">
+            <p>Nx Library provide built-in support for building micro-frontend with webpack and Module Fedration</p>
+          </div>
+          <div *ngIf="displayindex == 4">
+            <p>We have Create a small example of Microfronted. Consisting of a Host application i.e. Shell and two
+              microfrontend application i.e. remote and angular-view</p>
+            <img alt="arch" src="assets\architechture.jpg" width="1000px">
+  
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  </div>
